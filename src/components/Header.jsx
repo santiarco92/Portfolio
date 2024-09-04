@@ -3,7 +3,9 @@ import React from "react";
 
 function Header () {
 
-    return <header> <h1>This is the header</h1> </header>
+    return <header className="header"> <h1>SANTIAGO ARROYAVE</h1> 
+    <p>Bilingual Project Manager / SCRUM Master</p>
+    </header>
 }
 
 
