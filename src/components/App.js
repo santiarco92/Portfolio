@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 import Header from "./Header";
 import Education from "./Education";
 import Projects from "./Projects";
@@ -7,6 +8,7 @@ import "../styles/index.css"
 function App() {
   return (
    <div>
+    <NavBar/>
     <Header />
     <Education />
     <Projects />

@@ -32,6 +32,15 @@ p {
     font-weight: var(--thin);
 }
 
+.navbar-nav .nav-link {
+    color: var(--primary-cl) !important; 
+  }
+  
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-cl) !important; 
+    border-bottom: var(--secondary-cl) solid 2px;
+  }
+
 h1 {
     font-size: 4.5rem;
     color: var(--primary-cl);
@@ -64,7 +73,6 @@ h5{
 
 body {
     font-family: "Playfair Display";
-    /* background-color: var(--primary-bg); */
 }
 
 /* Background color animation*/
@@ -92,6 +100,30 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+/*NAV BAR*/
+.logo {
+    height: 3rem;
+    border-radius: 30px;
+}
+
+.navbar-brand {
+    padding: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Separar logo de los enlaces */
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Mover enlaces hacia la derecha */
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  
 
 
 .header {
