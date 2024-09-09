@@ -132,6 +132,7 @@ body {
    flex-direction: column;
    justify-content: center;
    text-align: center;
+   
 }
 
 .header p {
@@ -139,4 +140,5 @@ body {
     font-size: 1.2rem;
     font-style: italic;
 }
+
 
