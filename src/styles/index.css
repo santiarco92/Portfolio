@@ -2,8 +2,8 @@
     --primaryFont: 'Playfair Display';
     /*BACKGROUNDS*/
     --primary-bg: 	#253439; 
-    --secondary-bg: #C7AE6A;
-    --tertiary-bg:;
+    --secondary-bg: #374E55;
+    --tertiary-bg:#4A6A72;
     /*FONT WEIGHT*/
     --thin: 100;
     --extra-light: 200;
@@ -19,6 +19,7 @@
     --secondary-cl: #c8cac8;
 }
 
+/***********************************************************************/
 
 /* Fonts Adjustments*/
 h1, h2, h3, h4, h5 {
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5 {
 p {
     font-family: var(--primaryFont);
     font-weight: var(--thin);
+    color: var(--secondary-cl);
 }
 
 .navbar-nav .nav-link {
@@ -55,8 +57,9 @@ h2 {
 
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: var(--bold);
+    color: var(--primary-cl);
 }
 
 h4 {
@@ -74,6 +77,9 @@ h5{
 body {
     font-family: "Playfair Display";
 }
+
+
+/***********************************************************************/
 
 /* Background color animation*/
 .css-selector {
@@ -100,6 +106,8 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+/***********************************************************************/
+
 
 /*NAV BAR*/
 .logo {
@@ -115,17 +123,21 @@ body {
     display: flex;
     justify-content: space-between; /* Separar logo de los enlaces */
     align-items: center;
-  }
+}
   
-  .navbar-nav {
+.navbar-nav {
     display: flex;
     justify-content: flex-end; /* Mover enlaces hacia la derecha */
     width: 100%;
     padding: 1rem 2rem;
-  }
-  
+}
+
+/***********************************************************************/
+
+/*HEADER SECTION*/
 
 
+/* Adjust the position of the header */
 .header {
    height: 45rem;
    display: flex;
@@ -135,10 +147,40 @@ body {
    
 }
 
+/*adjust the color of the subtitle*/
 .header p {
-    color:var(--secondary-cl);
     font-size: 1.2rem;
     font-style: italic;
 }
 
+/***********************************************************************/
 
+
+/*EDUACTION SECTION*/
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+ul {
+    
+}
+
+ li {
+    color: var(--secondary-cl);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li p {
+    padding: 0 1rem;
+}
+
+.s-skills-container {
+    display: flex;
+    padding: 2rem 2rem;
+    text-align: left;
+}
