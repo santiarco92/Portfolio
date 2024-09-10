@@ -25,17 +25,17 @@ function Education() {
                     marks min={1} 
                     max={5} disabled 
                     sx={{
-                        color: '#b29e84', // Cambia el color principal del slider (thumb, track, etc.)
+                        color: 'white', // Cambia el color principal del slider (thumb, track, etc.)
                         '& .MuiSlider-thumb': {
                           width: 10, 
                           height: 10, 
-                          backgroundColor: '#b29e84', // Color del círculo (thumb)
+                          backgroundColor: '7BAEBD', // Color del círculo (thumb)
                         },
                         '& .MuiSlider-track': {
-                          backgroundColor: '#b29e84', // Color de la línea del progreso (track)
+                          backgroundColor: '#7BAEBD', // Color de la línea del progreso (track)
                         },
                         '& .MuiSlider-rail': {
-                          backgroundColor: '#b29e84', // Color de la línea de fondo (rail)
+                          backgroundColor: '#c8cac8', // Color de la línea de fondo (rail)
                         },
                     }}/>
                 </Box>
@@ -55,30 +55,32 @@ function Education() {
 
 
         return  <Paper 
-        elevation={3} 
-        className="paper"
-        onClick={handlePaperClick}
-        sx={{
-            cursor: 'pointer', // Cambia el cursor para mostrar que es clicable
-            position: 'relative', // Posiciona para poder agregar el tooltip
-            backgroundColor: '#182225',
-            '&:hover::after': {
-              content: '"Click to view certificate"', // Muestra el mensaje al hacer hover
-              position: 'absolute',
-              top: '10px',
-              left: '10px',
-              backgroundColor: '#253439',
-              color: '#fff',
-              padding: '5px',
-              borderRadius: '5px',
-              fontSize: '12px',
-            }
-          }}
-          title="Click to view certificate" // Muestra el mensaje en el tooltip por defecto
-        >
-            <h3>{education.title}</h3>
-            <h4>{education.institution} {education.date}</h4>
-            <p>{education.degree}</p>
+                    key={education.id}
+                    elevation={3} 
+                    className="paper"
+                    onClick={handlePaperClick}
+                    sx={{
+                        cursor: 'pointer', // Cambia el cursor para mostrar que es clicable
+                        position: 'relative', // Posiciona para poder agregar el tooltip
+                        backgroundColor: '#182225',
+                        '&:hover::after': {
+                        content: '"Click To View Certificate"', // Muestra el mensaje al hacer hover
+                        position: 'absolute',
+                        top: '10px',
+                        left: '10px',
+                        backgroundColor: '#b29e84',
+                        color: '#182225',
+                        fontWeight:"bold",
+                        padding: '5px',
+                        borderRadius: '5px',
+                        fontSize: '13px',
+                                        }
+                        }}
+                    title="Click to view certificate" // Muestra el mensaje en el tooltip por defecto
+                    >
+                <h3>{education.title}</h3>
+                <h4>{education.institution} {education.date}</h4>
+                <p>{education.degree}</p>
             </Paper>
     }
 
