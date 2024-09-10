@@ -2,7 +2,6 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import softSkills, {techSkills} from "../info/skills"
-import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import education from "../info/education";
 

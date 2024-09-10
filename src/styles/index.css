@@ -48,6 +48,7 @@ h1 {
     font-size: 4.5rem;
     color: var(--primary-cl);
     font-weight: var(--medium);
+    text-shadow: 0px 4px 4px black
 }
 
 h2 {
@@ -55,6 +56,7 @@ h2 {
     color: var(--primary-cl);
     font-weight: var(--medium);
     padding: 2rem;
+    text-shadow: 0px 4px 4px black
 }
 
 
@@ -62,6 +64,7 @@ h3 {
     font-size: 1.5rem;
     font-weight: var(--bold);
     color: var(--tertiary-cl);
+    text-shadow: 0px 4px 4px black;
 }
 
 h4 {
@@ -69,12 +72,34 @@ h4 {
     font-weight: var(--bold);
     color: var(--secondary-cl);
     font-style: italic;
+    text-shadow: 0px 4px 4px black;
 }
 
 h5{
     font-size: 1rem;
-    font-weight: var(--thin);
-    color: var(--secondary-bg);
+    font-weight: var(--bold);
+    color: var(--primary-cl);
+    text-shadow: 0px 4px 4px black
+}
+
+ul {
+    padding: 0 1rem;
+    margin-left: 0;  /* Quita el margen del <ul> */
+    list-style: none; /* Elimina el estilo de viñetas (opcional si no quieres las viñetas) */
+    column-count: 2; /* Divide la lista en 2 columnas */
+    column-gap: 2rem; /* Añade espacio entre las columnas */
+}
+
+
+ li {
+    color: var(--secondary-cl);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0; /* Elimina cualquier padding del <li> */
+    margin-left: 0;  /* Elimina cualquier margen del <li> */
+    break-inside: avoid; /* Evita que un <li> se rompa entre columnas */
+    padding-bottom: 1rem; /* Añade espacio entre los items de la lista */
 }
 
 body {
@@ -116,6 +141,7 @@ body {
 .logo {
     height: 3rem;
     border-radius: 30px;
+    border: var(--primary-cl) solid 3px;
 }
 
 .navbar-brand {
@@ -172,34 +198,9 @@ body {
     padding-bottom: 2rem;
 }
 
-ul {
-    padding: 0 1rem;
-    margin-left: 0;  /* Quita el margen del <ul> */
-    list-style: none; /* Elimina el estilo de viñetas (opcional si no quieres las viñetas) */
-    column-count: 2; /* Divide la lista en 2 columnas */
-    column-gap: 2rem; /* Añade espacio entre las columnas */
-}
-
-
- li {
-    color: var(--secondary-cl);
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0; /* Elimina cualquier padding del <li> */
-    margin-left: 0;  /* Elimina cualquier margen del <li> */
-    break-inside: avoid; /* Evita que un <li> se rompa entre columnas */
-    padding-bottom: 1rem; /* Añade espacio entre los items de la lista */
-}
-
 li p {
     padding: 0 1rem;
 }
-
-
-
-
-
 
 
 /***********************************************************************/
@@ -234,12 +235,68 @@ li p {
 }
 
 .paper:hover {
-    border: solid var(--primary-cl) 5px;
+    border: groove var(--primary-cl) 5px;
 }
 
 .paper .c-btn {
     display: flex;
 }
+
+
+/****************************************************************************************************/
+/*PROJECTS*/
+
+.projects {
+    border: var(--primary-cl) solid 4px;
+    text-align: center;
+}
+
+.img-container {
+    padding: 2rem;
+}
+
+
+
+.project-container {
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-title {
+    text-align: center;
+    color: var(--tertiary-cl);
+    padding-bottom: 1.5rem;
+}
+
+.project-tech p, .project-description p, .project-achivments li  {
+    padding: 1rem;
+}
+
+.project-achivments {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-achivments ul {
+    padding: 0;
+    margin: 0;
+    column-count: 1;
+    
+}
+
+.project-achivments li {
+    margin: 0; 
+}
+
+
+
+
 
 /****************************************************************************************************/
 

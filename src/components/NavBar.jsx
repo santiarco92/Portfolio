@@ -1,10 +1,11 @@
 import React from "react";
+import Logo from "../img/SA-White-bg.jpg"
 
 function NavBar () {
 
     return <nav class="navbar navbar-expand-lg fixed-top css-selector" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img className="logo" src="/IMG/SA-White-bg.jpg" alt="Logo" /> </a>
+      <a class="navbar-brand" href="#"><img className="logo" src={Logo} alt="Logo" /> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
