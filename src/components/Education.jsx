@@ -55,25 +55,39 @@ function Education() {
             };
 
 
-        return <div className="paper-container">
-        <Paper 
+        return  <Paper 
         elevation={3} 
         className="paper"
         onClick={handlePaperClick}
+        sx={{
+            cursor: 'pointer', // Cambia el cursor para mostrar que es clicable
+            position: 'relative', // Posiciona para poder agregar el tooltip
+            backgroundColor: '#182225',
+            '&:hover::after': {
+              content: '"Click to view certificate"', // Muestra el mensaje al hacer hover
+              position: 'absolute',
+              top: '10px',
+              left: '10px',
+              backgroundColor: '#253439',
+              color: '#fff',
+              padding: '5px',
+              borderRadius: '5px',
+              fontSize: '12px',
+            }
+          }}
+          title="Click to view certificate" // Muestra el mensaje en el tooltip por defecto
         >
             <h3>{education.title}</h3>
             <h4>{education.institution} {education.date}</h4>
             <p>{education.degree}</p>
-            </Paper> 
-    </div>
-
+            </Paper>
     }
 
 
 
     return <div>
             <div className="skills">
-                <div className="softskills">
+                <div className="skill-container">
                     <h2>Skills</h2>
                     <div className="t-skills-container">
                         <ul>
@@ -81,7 +95,7 @@ function Education() {
                         </ul>
                     </div>
                 </div>
-                <div className="technical-skills">
+                <div className="skill-container" >
                     <h2>Technical Skills</h2>
                     <div className="t-skills-container">
                         <ul>
@@ -93,7 +107,10 @@ function Education() {
             </div>
         <div className="education">
             <h2>Education</h2>
-            {education.map(createEducation)}
+            <Box className="paper-container">
+                {education.map(createEducation)}
+            </Box>
+            
         </div>
     </div>
 }

@@ -2,8 +2,8 @@
     --primaryFont: 'Playfair Display';
     /*BACKGROUNDS*/
     --primary-bg: 	#253439; 
-    --secondary-bg: #374E55;
-    --tertiary-bg:#4A6A72;
+    --secondary-bg: #202D31;
+    --tertiary-bg:#182225;
     /*FONT WEIGHT*/
     --thin: 100;
     --extra-light: 200;
@@ -17,6 +17,7 @@
     /*COLORS*/
     --primary-cl: #b29e84;
     --secondary-cl: #c8cac8;
+    --tertiary-cl:#4A6A72;
 }
 
 /***********************************************************************/
@@ -53,18 +54,20 @@ h2 {
     font-size: 2.9rem;
     color: var(--primary-cl);
     font-weight: var(--medium);
+    padding: 2rem;
 }
 
 
 h3 {
     font-size: 1.5rem;
     font-weight: var(--bold);
-    color: var(--tertiary-bg);
+    color: var(--tertiary-cl);
 }
 
 h4 {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: var(--bold);
+    color: var(--secondary-cl);
     font-style: italic;
 }
 
@@ -166,12 +169,15 @@ body {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 ul {
     padding: 0 1rem;
     margin-left: 0;  /* Quita el margen del <ul> */
     list-style: none; /* Elimina el estilo de viñetas (opcional si no quieres las viñetas) */
+    column-count: 2; /* Divide la lista en 2 columnas */
+    column-gap: 2rem; /* Añade espacio entre las columnas */
 }
 
 
@@ -182,12 +188,95 @@ ul {
     justify-content: space-between;
     padding-left: 0; /* Elimina cualquier padding del <li> */
     margin-left: 0;  /* Elimina cualquier margen del <li> */
+    break-inside: avoid; /* Evita que un <li> se rompa entre columnas */
+    padding-bottom: 1rem; /* Añade espacio entre los items de la lista */
 }
 
 li p {
     padding: 0 1rem;
 }
 
+
+
+
+
+
+
+/***********************************************************************/
+
+/*EDUCATION*/
+
+.education {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.paper-container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 2rem; /* Adds spacing between items */
+}
+ 
+
+.paper {
+    text-align: left;
+    padding: 0 1rem;
+    height: 14rem;
+    align-content: center;
+    width: 30%;
+    background-color: var(--tertiary-bg);
+}
+
+.paper:hover {
+    border: solid var(--primary-cl) 5px;
+}
+
+.paper .c-btn {
+    display: flex;
+}
+
+/****************************************************************************************************/
+
+@media (max-width: 1024px) {
+    .paper {
+        width: 30%; /* Each paper will take 30% of the container's width */
+        height: 14rem;
+    }
+
+    .paper-container {
+        padding: 0 1rem;
+    }
+    .skills {
+    flex-direction: column;
+    }
+
+    .skill-container {
+       margin: 2rem 0;
+    }
+
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
+    .paper {
+        width: 45%; /* Two papers per row on smaller screens */
+        height: 20rem;
+    }
+
+    .paper-container {
+        padding: 0 1rem;
+    }
+
+    ul {
+        column-count: 1; /* Muestra solo una columna en pantallas pequeñas */
+    }
+}
 
 
 /* Additional Small Screen Adjustments */
@@ -203,42 +292,4 @@ li p {
         padding: 0;
         margin-bottom: 0.5rem;
     }
-}
-
-
-
-/***********************************************************************/
-
-/*EDUCATION*/
-
-.education {
-    border: solid var(--primary-cl) 3px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-
-.paper-container {
-   display: flex;
-   justify-content: space-evenly;
-}
-
-.paper-container p {
-    color: black
-}
-
-.paper {
-    text-align: left;
-    padding: 0 0.9rem;
-    width: 15rem;
-    height: 20rem;
-    align-content: center;
-    margin: 0.5rem;
-}
-
-.paper .c-btn {
-    display: flex;
 }

@@ -12,7 +12,6 @@ function NavBar () {
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Skills</a>
           <a class="nav-link" href="#">Education</a>
-          <a class="nav-link" href="#">Certiications</a>
           <a class="nav-link" href="#">Projects</a>
           <a class="nav-link" href="#">Experience</a>
         </div>
