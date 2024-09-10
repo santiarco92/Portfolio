@@ -1,4 +1,4 @@
-const educations = [
+const education = [
     {
         title: "Full-Stack Web Development",
         institution: "Udemy",
@@ -32,7 +32,7 @@ const educations = [
         institution: "Politécnico de Colombia",
         date: "(Oct 2021 - Dec 2021)",
         degree: "Diploma",
-        link: "https://drive.google.com/file/d/12UFCoFYjPPuCFCgX5B_m5ABlthfjYQaj/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1e1jgPyHlBKna6UwDze1yYzSwnktoaJZa/view?usp=sharing"
     },   {
         title: "Psychology",
         institution: "Institucion Universitaria de Envigado",
@@ -42,4 +42,4 @@ const educations = [
     }
 ]
 
-export default educations;
+export default education;

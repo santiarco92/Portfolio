@@ -61,7 +61,7 @@ const techSkills = [
     {
         id: 3,
         skill:"Node.jsL",
-        level: "1"
+        level: "2"
     },
     {
         id: 4,
@@ -71,22 +71,22 @@ const techSkills = [
     {
         id: 5,
         skill:"Express.js",
-        level: "1"
+        level: "2"
     },
     {
         id: 6,
         skill:"Axios",
-        level: "1"
+        level: "2"
     },
     {
         id: 7,
         skill:"SQL",
-        level: "1"
+        level: "2"
     },
     {
         id: 8,
         skill:"Postgres",
-        level: "1"
+        level: "2"
     },
     {
         id: 9,

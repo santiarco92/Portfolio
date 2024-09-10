@@ -46,25 +46,25 @@ p {
 h1 {
     font-size: 4.5rem;
     color: var(--primary-cl);
-    font-weight: var(--thin);
+    font-weight: var(--medium);
 }
 
 h2 {
     font-size: 2.9rem;
-    color: var(--secondary-bg);
-    font-weight: var(--thin);
+    color: var(--primary-cl);
+    font-weight: var(--medium);
 }
 
 
 h3 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: var(--bold);
-    color: var(--primary-cl);
+    color: var(--tertiary-bg);
 }
 
 h4 {
-    font-size: 0.8rem;
-    font-weight: var(--semi-bold);
+    font-size: 0.75rem;
+    font-weight: var(--bold);
     font-style: italic;
 }
 
@@ -158,29 +158,87 @@ body {
 
 /*EDUACTION SECTION*/
 
+
+/*SKILLS*/
+
 .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 
 ul {
-    
+    padding: 0 1rem;
+    margin-left: 0;  /* Quita el margen del <ul> */
+    list-style: none; /* Elimina el estilo de viñetas (opcional si no quieres las viñetas) */
 }
+
 
  li {
     color: var(--secondary-cl);
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding-left: 0; /* Elimina cualquier padding del <li> */
+    margin-left: 0;  /* Elimina cualquier margen del <li> */
 }
 
 li p {
     padding: 0 1rem;
 }
 
-.s-skills-container {
+
+
+/* Additional Small Screen Adjustments */
+@media (max-width: 480px) {
+    .skills {
+        flex-direction: column; /* Stack vertically on cellphones */
+    }
+    li {
+        flex-direction: column; /* Stack skill title and slider vertically */
+        align-items: center;
+    }
+    li p {
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+/***********************************************************************/
+
+/*EDUCATION*/
+
+.education {
+    border: solid var(--primary-cl) 3px;
     display: flex;
-    padding: 2rem 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.paper-container {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.paper-container p {
+    color: black
+}
+
+.paper {
     text-align: left;
+    padding: 0 0.9rem;
+    width: 15rem;
+    height: 20rem;
+    align-content: center;
+    margin: 0.5rem;
+}
+
+.paper .c-btn {
+    display: flex;
 }
