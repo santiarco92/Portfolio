@@ -2,7 +2,7 @@ const experience = [
     {
         jobTitle: "IT Project Manager / SCRUM Master",
         company: "Lemonk Studio",
-        date: "(May 2022 - July 2024)",
+        date: " (May 2022 - July 2024)",
         description: [ "Led game development, e-learning, and web development projects for a USA-based client.", 
             "Managed a team of 6-27 members, ensuring quality deliverables.",
             "Transitioned the company's methodologies from waterfall to Scrum.",
@@ -12,7 +12,7 @@ const experience = [
     {
         jobTitle: "Talent Associate",
         company: "Remoti",
-        date: "(Aug 2022 - April 2023)",
+        date: " (Aug 2022 - April 2023)",
         description: [
             "Sourced and pre-screened tech talent, aligning with client needs.",
             "Transitioned to Scrum methodologies for recruitment processes.",
@@ -21,7 +21,7 @@ const experience = [
     {
         jobTitle: "Recruiter",
         company: "Solvo",
-        date: "(Nov 2021 - Aug 2022)",
+        date: " (Nov 2021 - Aug 2022)",
         description:["Conducted initial interviews and presented top candidates to account managers.",
             "Managed candidate reports and schedules, ensuring effective communication."]
     },
@@ -35,7 +35,7 @@ const experience = [
     {
         jobTitle: "Project Manager/ Social Worker",
         company: "Contractor",
-        date: "(Jan 2016 - April 2021)",
+        date: " (Jan 2016 - April 2021)",
         description: ["Led community-based projects targeting vulnerable children.",
             "Identified needs and implemented safe coping mechanisms."]
     }

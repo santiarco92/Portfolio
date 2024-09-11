@@ -85,7 +85,7 @@ h5{
 ul {
     padding: 0 1rem;
     margin-left: 0;  /* Quita el margen del <ul> */
-    list-style: none; /* Elimina el estilo de viñetas (opcional si no quieres las viñetas) */
+    list-style: none; 
     column-count: 2; /* Divide la lista en 2 columnas */
     column-gap: 2rem; /* Añade espacio entre las columnas */
 }
@@ -98,8 +98,11 @@ ul {
     justify-content: space-between;
     padding-left: 0; /* Elimina cualquier padding del <li> */
     margin-left: 0;  /* Elimina cualquier margen del <li> */
-    break-inside: avoid; /* Evita que un <li> se rompa entre columnas */
     padding-bottom: 1rem; /* Añade espacio entre los items de la lista */
+}
+
+a {
+    text-shadow: 0px 4px 4px black
 }
 
 body {
@@ -111,29 +114,31 @@ body {
 
 /* Background color animation*/
 .css-selector {
-    background: linear-gradient(270deg, #12191b, #253439);
+    background: linear-gradient(270deg, #182225, #253439);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
 }
+
+
 /***********************************************************************/
 
 
@@ -234,8 +239,8 @@ li p {
     background-color: var(--tertiary-bg);
 }
 
-.paper:hover {
-    background-color: var(--primary-bg);
+.paper:hover, .card-project:hover {
+    background-color: rgba(37, 52, 57, 0.4);
 }
 
 
@@ -248,9 +253,8 @@ li p {
 /****************************************************************************************************/
 /*PROJECTS*/
 
-.projects {
+.projects h2{
     text-align: center;
-    margin: 5rem;
 }
 
 .img-container {
@@ -264,7 +268,6 @@ li p {
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -312,6 +315,43 @@ li p {
 
 
 
+/***********************************************************************/
+/*EXPERIENCE*/
+
+.experience h2{
+    text-align: center;
+}
+
+
+.experience-container {
+    border: var(--primary-cl) solid 3px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.exp-container {
+    margin: 2rem 0;
+    padding: 1rem;    
+}
+
+.exp-container h4 {
+    padding-left: 1rem;
+}
+
+.exp-container ul {
+    column-count: 1;
+}
+
+.exp-container li {
+    padding-left: 1rem;
+}
+
+
+
+
 
 /****************************************************************************************************/
 
@@ -348,6 +388,9 @@ li p {
     ul {
         column-count: 1; /* Muestra solo una columna en pantallas pequeñas */
     }
+    .card-project {
+        width: 300;
+    }
 }
 
 
@@ -363,5 +406,9 @@ li p {
     li p {
         padding: 0;
         margin-bottom: 0.5rem;
+    }
+
+    .card-project {
+        width: 300;
     }
 }

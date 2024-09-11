@@ -62,13 +62,13 @@ function Education() {
                     sx={{
                         cursor: 'pointer', // Cambia el cursor para mostrar que es clicable
                         position: 'relative', // Posiciona para poder agregar el tooltip
-                        backgroundColor: '#182225',
+                        backgroundColor: 'rgba(24, 34, 37, 0.2)',
                         '&:hover::after': {
                         content: '"Click To View Certificate"', // Muestra el mensaje al hacer hover
                         position: 'absolute',
                         top: '10px',
                         left: '10px',
-                        backgroundColor: '#b29e84',
+                        backgroundColor: 'rgba(178, 158, 132, 0.8)',
                         color: '#182225',
                         fontWeight:"bold",
                         padding: '5px',

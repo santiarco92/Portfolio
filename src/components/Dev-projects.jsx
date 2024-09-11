@@ -6,9 +6,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
-import projects from "../info/projects";
+import DevProjects from "../info/devprojects";
 
-function Projects() {
+function Devprojects() {
   const [expandedCard, setExpandedCard] = useState(null);
 
   // Maneja el clic en la tarjeta
@@ -47,7 +47,7 @@ function Projects() {
             className="img-container"
             component="img"
             height="250"
-            image={project.img}
+            image={project.image}
             alt={project.title}
           />
           <CardContent>
@@ -60,15 +60,11 @@ function Projects() {
             {/* Mostrar solo si la tarjeta está expandida */}
             {isExpanded && (
               <>
-                <div className="project-tech">
-                  <h5>Technologies:</h5>
-                  <p>{project.technologies}</p>
-                </div>
                 <div className="project-achivments">
-                  <h5>Achievements:</h5>
+                  <h5>Stack:</h5>
                   <ul>
-                    {project.achivments.map((achievement, index) => (
-                      <li key={index}>{achievement}</li>
+                    {project.stack.map((stack, index) => (
+                      <li key={index}>{stack}</li>
                     ))}
                   </ul>
                 </div>
@@ -81,20 +77,20 @@ function Projects() {
             variant="contained"
             size="small"
             color="primary"
-            onClick={() => window.open(project.link, "_blank")}
-            disabled={!project.link}
+            onClick={() => window.open(project.url, "_blank")}
+            disabled={!project.url}
             sx={{
               color: "#7BAEBD",
               backgroundColor: "#202D31",
               "&.Mui-disabled": {
-                color: "transparent", // Color de texto cuando está deshabilitado
-                backgroundColor: "transparent", // Color de fondo cuando está deshabilitado
+                color: "#182225", // Color de texto cuando está deshabilitado
+                backgroundColor: "#182225", // Color de fondo cuando está deshabilitado
               },
               "&:hover": {
-                backgroundColor: "transparent", // Color de fondo en hover
+                backgroundColor: "#253439", // Color de fondo en hover
               },
               "&:active": {
-                backgroundColor: "transparent", // Color de fondo al hacer clic
+                backgroundColor: "#b29e84", // Color de fondo al hacer clic
               },
             }}
           >
@@ -107,12 +103,12 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h2>Projects Managed</h2>
+      <h2>Web Projects Developed</h2>
       <Box className="project-container">
-        {projects.map(createProject)}
+        {DevProjects.map(createProject)}
       </Box>
     </div>
   );
 }
 
-export default Projects;
+export default Devprojects;
