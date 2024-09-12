@@ -55,6 +55,7 @@ function Education() {
 
 
         return  <Paper 
+                    data-aos={education.aos}
                     key={education.id}
                     elevation={3} 
                     className="paper"
@@ -62,7 +63,8 @@ function Education() {
                     sx={{
                         cursor: 'pointer', // Cambia el cursor para mostrar que es clicable
                         position: 'relative', // Posiciona para poder agregar el tooltip
-                        backgroundColor: 'rgba(24, 34, 37, 0.2)',
+                        backgroundColor: 'rgba(24, 34, 37, 0.3)',
+                        boxShadow: "5px 5px 15px rgba(0, 0, 0, 0.5)", 
                         '&:hover::after': {
                         content: '"Click To View Certificate"', // Muestra el mensaje al hacer hover
                         position: 'absolute',
@@ -86,34 +88,38 @@ function Education() {
 
 
 
-    return <div>
-            <div className="skills">
-                <div className="skill-container">
-                    <h2>Skills</h2>
-                    <div className="t-skills-container">
-                        <ul>
-                           {softSkills.map(createSkill)}
-                        </ul>
+    return <Box className="educantion">
+                <div className="skills">
+                    <div 
+                        className="skill-container" 
+                        data-aos="zoom-out">
+                        <h2>Skills</h2>
+                        <Box className="t-skills-container">
+                            <ul>
+                            {softSkills.map(createSkill)}
+                            </ul>
+                        </Box>
                     </div>
-                </div>
-                <div className="skill-container" >
-                    <h2>Technical Skills</h2>
-                    <div className="t-skills-container">
-                        <ul>
-                            {techSkills.map(createSkill)}
-                        </ul>
-                    </div>
+                    <div 
+                        className="skill-container"
+                        data-aos="zoom-out">
+                        <h2 data-aos="zoom-out">Technical Skills</h2>
+                        <div className="t-skills-container">
+                            <ul>
+                                {techSkills.map(createSkill)}
+                            </ul>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-        <div className="education">
-            <h2>Education</h2>
-            <Box className="paper-container">
-                {education.map(createEducation)}
-            </Box>
-            
-        </div>
-    </div>
+                <div className="education-container">
+                <h2 data-aos="zoom-out">Education</h2>
+                <Box className="paper-container">
+                    {education.map(createEducation)}
+                </Box>
+                
+                </div>
+        </Box>
 }
 
 export default Education;

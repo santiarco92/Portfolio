@@ -4,19 +4,28 @@ import Education from "./Education";
 import Projects from "./Projects";
 import Devprojects from "./Dev-projects";
 import Experience from "./Experience";
-import "../styles/index.css"
+import Footer from "./Footer";
+import "../styles/index.css";
 
 function App() {
   return (
-   <div>
-    <NavBar/>
-    <Header />
-    <Education />
-    <Projects />
-    <Devprojects />
-    <Experience />
-    <h1>ejemplo</h1>
-   </div>
+    <div>
+      <NavBar />
+      <Header />
+      <section id="Education">
+        <Education />
+      </section>
+      <section id="Projects">
+        <Projects />
+      </section>
+      <section id="Devprojects">
+        <Devprojects />
+      </section>
+      <section id="Experience">
+        <Experience />
+      </section>
+      <Footer />
+    </div>
   );
 }
 
