@@ -70,7 +70,7 @@ function Projects() {
                           <div className="project-achivments">
                             <h5>Achievements:</h5>
                             <ul>
-                              {project.achivments.map((achievement, index) => (
+                              {project.achivements.map((achievement, index) => (
                                 <li key={index}>{achievement}</li>
                               ))}
                             </ul>
