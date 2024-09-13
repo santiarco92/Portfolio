@@ -60,7 +60,7 @@ const techSkills = [
     },
     {
         id: 3,
-        skill:"Node.jsL",
+        skill:"Node.js",
         level: "2"
     },
     {

@@ -27,6 +27,13 @@ html {
     
   }
 
+  body {
+    font-family: "Playfair Display";
+    overflow-x: hidden;
+}
+
+
+
 
 /* Fonts Adjustments*/
 h1, h2, h3, h4, h5 {
@@ -111,9 +118,7 @@ a {
     text-shadow: 0px 4px 4px black
 }
 
-body {
-    font-family: "Playfair Display";
-}
+
 
 
 /***********************************************************************/
@@ -223,9 +228,7 @@ li p {
 /*EDUCATION*/
 
 
-.educantion {
-    margin: 3rem 0;
-}
+
 
 .education-container {
     
@@ -475,9 +478,8 @@ footer {
     max-width: 100%;
   }
 
-  img {
-    max-width: 100%;
-  
-  }
+
+
+
   
   

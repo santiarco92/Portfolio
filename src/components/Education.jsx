@@ -50,8 +50,12 @@ function Education() {
     function createEducation(education) {
 
         const handlePaperClick = () => {
+            if (education.link) {
                 window.open(education.link, "", "noopener noreferrer");
-            };
+            } else {
+                console.error("El enlace es nulo o indefinido");
+            }
+        };
 
 
         return  <Paper 
@@ -80,9 +84,12 @@ function Education() {
                         }}
                     title="Click to view certificate" // Muestra el mensaje en el tooltip por defecto
                     >
+                       
                 <h3>{education.title}</h3>
                 <h4>{education.institution} {education.date}</h4>
                 <p>{education.degree}</p>
+                        
+               
             </Paper>
     }
 

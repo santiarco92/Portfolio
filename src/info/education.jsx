@@ -40,11 +40,11 @@ const education = [
         link: "https://drive.google.com/file/d/1e1jgPyHlBKna6UwDze1yYzSwnktoaJZa/view?usp=sharing"
     },   {
         title: "Psychology",
-        institution: "Institucion Universitaria de Envigado",
+        institution: "Institución Universitaria de Envigado",
         date: " ( Feb 2011 - Sep 2017 )",
         degree: "Bachelor Degree",
         aos: "fade-right",
-        link: ""
+        link: "https://drive.google.com/file/d/1e1jgPyHlBKna6UwDze1yYzSwnktoaJZa/view?usp=sharing"
     }
 ]
 
