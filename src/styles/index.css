@@ -167,7 +167,7 @@ li p {
 }
 
 .navbar-toggler {
-    border: 2px solid var(--primary-cl);
+    border: 2px solid var(--primary-cl); /*Adjust the color of the toogles*/
 }
 
 .navbar-toggler:focus {
@@ -281,7 +281,7 @@ li p {
 }
 
 .card-container {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Makes a gap between the cards when expanded */
 }
 
 .card-project {
@@ -439,36 +439,37 @@ footer {
 
 
 
-/* Asegura que no haya desbordamiento en ningún caso */
+/* Ensure no horizontal overflow occurs */
 body, html {
-    overflow-x: hidden; /* Elimina el desbordamiento horizontal */
-    max-width: 100%;    /* Limita el ancho al viewport */
-  }
-  
-  /* Imágenes */
-  img {
-    max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
-    height: auto;    /* Mantiene la proporción de las imágenes */
-  }
-  
-  /* Ajustes específicos para contenedores en móviles */
-  @media (max-width: 768px) {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    max-width: 100%;    /* Restrict the width to the viewport width */
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensure images do not exceed the container width */
+    height: auto;    /* Maintain the aspect ratio of images */
+}
+
+/* Specific adjustments for containers on mobile devices */
+@media (max-width: 768px) {
     .container-fluid, .projects, .experience, .skills {
-      padding: 0 10px; /* Reduce el padding en pantallas pequeñas */
+        padding: 0 10px; /* Reduce padding on small screens */
     }
-  
+
     .card-project, .exp-container, .project-container {
-      width: 100%;        /* Asegura que los elementos ocupen el 100% del ancho */
-      max-width: 100%;    /* Limita el ancho al 100% */
-      margin: 0;          /* Evita márgenes que puedan causar desbordamiento */
-      padding: 0;         /* Elimina padding excesivo */
+        width: 100%;        /* Ensure elements take up 100% of the width */
+        max-width: 100%;    /* Restrict width to 100% */
+        margin: 0;          /* Remove margins that could cause overflow */
+        padding: 0;         /* Remove excessive padding */
     }
-  }
-  
-  /* Corrige posibles problemas de uso de vw */
-  body {
-    width: 100%; /* Asegura que no se use vw que puede causar desbordamiento */
-  }
+}
+
+/* Corrects possible issues with using vw units */
+body {
+    width: 100%; /* Ensure vw units are not used, which could cause overflow */
+}
+
 
 
 
