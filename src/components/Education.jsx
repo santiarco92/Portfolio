@@ -51,12 +51,16 @@ function Education() {
     
         // Function to handle click on the Paper component
         const handlePaperClick = () => {
-          if (education.link) {
-            window.open(education.link, "", "noopener noreferrer"); // Open the link in a new tab
-          } else {
-            console.error("The link is null or undefined"); // Log an error if the link is not available
-          }
-        };
+            try {
+              if (education.link) {
+                window.open(education.link, "_blank", "noopener noreferrer");
+              } else {
+                console.error("The link is null or undefined");
+              }
+            } catch (error) {
+              console.error("Error opening the link:", error);
+            }
+          };
     
         return (
           <Paper 
