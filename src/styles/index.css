@@ -167,7 +167,7 @@ li p {
 }
 
 .navbar-toggler {
-    border: 2px solid var(--primary-cl); /*Adjust the color of the toogles*/
+    border: none; /*Adjust the color of the toogles*/
 }
 
 .navbar-toggler:focus {
