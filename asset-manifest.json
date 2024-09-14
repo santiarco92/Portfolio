@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ae08a531.css",
+    "main.js": "/Portfolio/static/js/main.0304cca0.js",
+    "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/SHINE GAME.png": "/Portfolio/static/media/SHINE GAME.611134ab6c716580c0e3.png",
+    "static/media/SHINE Glossary.png": "/Portfolio/static/media/SHINE Glossary.5fe4750aa733beeb198b.png",
+    "static/media/Zeever.png": "/Portfolio/static/media/Zeever.c389026fa1a148dcae16.png",
+    "static/media/Fortune API.png": "/Portfolio/static/media/Fortune API.c59d8430ceaa82a91c4f.png",
+    "static/media/private.png": "/Portfolio/static/media/private.ad1bd64a2e7ecf598a27.png",
+    "static/media/Blog.png": "/Portfolio/static/media/Blog.f544fb4780faf575059d.png",
+    "static/media/ChangeImpact.jpeg": "/Portfolio/static/media/ChangeImpact.fec55b50ee0b1c83dc3e.jpeg",
+    "static/media/WebPortfolio.png": "/Portfolio/static/media/WebPortfolio.0d7ec326328e6f449460.png",
+    "static/media/Dragon Zoom.png": "/Portfolio/static/media/Dragon Zoom.ff3c996601906f66946f.png",
+    "static/media/Permalist.png": "/Portfolio/static/media/Permalist.d4f1d67b7920ec8224f5.png",
+    "index.html": "/Portfolio/index.html",
+    "main.ae08a531.css.map": "/Portfolio/static/css/main.ae08a531.css.map",
+    "main.0304cca0.js.map": "/Portfolio/static/js/main.0304cca0.js.map",
+    "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae08a531.css",
+    "static/js/main.0304cca0.js"
+  ]
+}
