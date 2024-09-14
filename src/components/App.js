@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <Header />
-      <section id="Education">
+      <section id="Education"> {/*This sections allow the user to travel i this portfolio*/}
         <Education />
       </section>
       <section id="Projects">
@@ -24,7 +24,10 @@ function App() {
       <section id="Experience">
         <Experience />
       </section>
-      <Footer />
+      <section id="Socials">
+        <Footer />
+      </section>
+      
     </div>
   );
 }

@@ -1,485 +1,411 @@
+/* Define custom properties */
 :root {
-    --primaryFont: 'Playfair Display';
-    /*BACKGROUNDS*/
-    --primary-bg: 	#253439; 
-    --secondary-bg: #202D31;
-    --tertiary-bg:#182225;
-    /*FONT WEIGHT*/
-    --thin: 100;
-    --extra-light: 200;
-    --light: 300;
-    --normal: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 700;
-    --extra-bold: 800;
-    --heavy:900;
-    /*COLORS*/
-    --primary-cl: #b29e84;
-    --secondary-cl: #c8cac8;
-    --tertiary-cl:#7BAEBD;
+    --primaryFont: 'Playfair Display'; /* Primary font for the site */
+    --primary-bg: #253439; /* Primary background color */
+    --secondary-bg: #202D31; /* Secondary background color */
+    --tertiary-bg: #182225; /* Tertiary background color */
+    --primary-cl: #b29e84; /* Primary text color */
+    --secondary-cl: #c8cac8; /* Secondary text color */
+    --tertiary-cl: #7BAEBD; /* Tertiary text color */
+    --thin: 100; /* Thin font weight */
+    --extra-light: 200; /* Extra-light font weight */
+    --light: 300; /* Light font weight */
+    --normal: 400; /* Normal font weight */
+    --medium: 500; /* Medium font weight */
+    --semi-bold: 600; /* Semi-bold font weight */
+    --bold: 700; /* Bold font weight */
+    --extra-bold: 800; /* Extra-bold font weight */
+    --heavy: 900; /* Heavy font weight */
 }
 
-/***********************************************************************/
-
+/* General Settings */
 html {
-    scroll-behavior: smooth;
-    
-  }
-
-  body {
-    font-family: "Playfair Display";
-    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
+body {
+    font-family: var(--primaryFont); /* Set the font family for the body */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-
-
-/* Fonts Adjustments*/
+/* Typography */
 h1, h2, h3, h4, h5 {
-    font-family: var(--primaryFont);
-    font-weight: var(--light);
-    line-height: var(--height-line);
+    font-family: var(--primaryFont); /* Set the font family for all headings */
+    font-weight: var(--light); /* Set default font weight */
+    line-height: var(--height-line); /* Line height for headings */
 }
-
-p {
-    font-family: var(--primaryFont);
-    font-weight: var(--thin);
-    color: var(--secondary-cl);
-}
-
-.navbar-nav .nav-link {
-    color: var(--primary-cl) !important; 
-  }
-  
-.navbar-nav .nav-link:hover {
-    color: var(--secondary-cl) !important; 
-    border-bottom: var(--secondary-cl) solid 2px;
-  }
 
 h1 {
-    font-size: 4.5rem;
-    color: var(--primary-cl);
-    font-weight: var(--medium);
-    text-shadow: 0px 4px 4px black
+    font-size: 4.5rem; /* Font size for h1 */
+    color: var(--primary-cl); /* Font color for h1 */
+    font-weight: var(--medium); /* Font weight for h1 */
+    text-shadow: 0px 4px 4px black; /* Shadow effect for h1 text */
 }
 
 h2 {
-    font-size: 2.9rem;
-    color: var(--primary-cl);
-    font-weight: var(--medium);
-    padding: 2rem;
-    text-shadow: 0px 4px 4px black
+    font-size: 2.9rem; /* Font size for h2 */
+    color: var(--primary-cl); /* Font color for h2 */
+    font-weight: var(--medium); /* Font weight for h2 */
+    padding: 2rem; /* Padding around h2 */
+    text-shadow: 0px 4px 4px black; /* Shadow effect for h2 text */
 }
 
-
 h3 {
-    font-size: 1.5rem;
-    font-weight: var(--bold);
-    color: var(--tertiary-cl);
-    text-shadow: 0px 4px 4px black;
+    font-size: 1.5rem; /* Font size for h3 */
+    font-weight: var(--bold); /* Font weight for h3 */
+    color: var(--tertiary-cl); /* Font color for h3 */
+    text-shadow: 0px 4px 4px black; /* Shadow effect for h3 text */
 }
 
 h4 {
-    font-size: 0.9rem;
-    font-weight: var(--bold);
-    color: var(--secondary-cl);
-    font-style: italic;
-    text-shadow: 0px 4px 4px black;
+    font-size: 0.9rem; /* Font size for h4 */
+    font-weight: var(--bold); /* Font weight for h4 */
+    color: var(--secondary-cl); /* Font color for h4 */
+    font-style: italic; /* Italicize h4 text */
+    text-shadow: 0px 4px 4px black; /* Shadow effect for h4 text */
 }
 
-h5{
-    font-size: 1rem;
-    font-weight: var(--bold);
-    color: var(--primary-cl);
-    text-shadow: 0px 4px 4px black
+h5 {
+    font-size: 1rem; /* Font size for h5 */
+    font-weight: var(--bold); /* Font weight for h5 */
+    color: var(--primary-cl); /* Font color for h5 */
+    text-shadow: 0px 4px 4px black; /* Shadow effect for h5 text */
 }
 
-ul {
-    padding: 0 1rem;
-    margin-left: 0;  /* Quita el margen del <ul> */
-    list-style: none; 
-    column-count: 2; /* Divide la lista en 2 columnas */
-    column-gap: 2rem; /* Añade espacio entre las columnas */
+p {
+    font-family: var(--primaryFont); /* Set the font family for paragraphs */
+    font-weight: var(--thin); /* Font weight for paragraphs */
+    color: var(--secondary-cl); /* Font color for paragraphs */
 }
 
-
- li {
-    color: var(--secondary-cl);
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0; /* Elimina cualquier padding del <li> */
-    margin-left: 0;  /* Elimina cualquier margen del <li> */
-    padding-bottom: 1rem; /* Añade espacio entre los items de la lista */
-}
-
+/* Links */
 a {
-    text-shadow: 0px 4px 4px black
+    text-shadow: 0px 4px 4px black; /* Shadow effect for links */
 }
 
-
-
-
-/***********************************************************************/
-
-/* Background color animation*/
-.css-selector {
-    background: linear-gradient(270deg, #182225, #253439);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 20s ease infinite;
-    -moz-animation: AnimationName 20s ease infinite;
-    animation: AnimationName 20s ease infinite;
+.navbar-nav .nav-link {
+    color: var(--primary-cl) !important; /* Set color for navbar links */
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 86%}
-    50%{background-position:100% 15%}
-    100%{background-position:0% 86%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 86%}
-    50%{background-position:100% 15%}
-    100%{background-position:0% 86%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 86%}
-    50%{background-position:100% 15%}
-    100%{background-position:0% 86%}
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-cl) !important; /* Change color on hover */
+    border-bottom: var(--secondary-cl) solid 2px; /* Add underline on hover */
 }
 
-
-/***********************************************************************/
-
-
-/*NAV BAR*/
-
-
-.logo {
-    height: 3rem;
-    border-radius: 30px;
-    border: var(--primary-cl) solid 3px;
+/* Lists */
+ul {
+    padding: 0 1rem; /* Padding around the list */
+    margin-left: 0; /* Remove left margin */
+    list-style: none; /* Remove list bullet points */
+    column-count: 2; /* Divide the list into 2 columns */
+    column-gap: 2rem; /* Space between columns */
 }
 
-.navbar-brand {
-    padding: 0 2rem;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Separar logo de los enlaces */
-    align-items: center;
-}
-  
-.navbar-nav {
-    display: flex;
-    justify-content: flex-end; /* Mover enlaces hacia la derecha */
-    width: 100%;
-    padding: 1rem 2rem;
-}
-
-
-
-/***********************************************************************/
-
-/*HEADER SECTION*/
-
-
-/* Adjust the position of the header */
-.header {
-   height: 45rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   
-}
-
-/*adjust the color of the subtitle*/
-.header p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/***********************************************************************/
-
-
-/*EDUACTION SECTION*/
-
-
-/*SKILLS*/
-
-.skills {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 2rem;
+li {
+    color: var(--secondary-cl); /* Font color for list items */
+    list-style: none; /* Remove list bullet points */
+    display: flex; /* Display list items as flex containers */
+    justify-content: space-between; /* Space between list items */
+    padding-left: 0; /* Remove left padding */
+    margin-left: 0; /* Remove left margin */
+    padding-bottom: 1rem; /* Space between list items */
 }
 
 li p {
-    padding: 0 1rem;
+    padding: 0 1rem; /* Padding inside list item paragraphs */
 }
 
+/* Backgrounds and Animations */
+.css-selector {
+    background: linear-gradient(270deg, #182225, #253439); /* Background gradient */
+    background-size: 400% 400%; /* Size of the background gradient */
+    -webkit-animation: AnimationName 20s ease infinite; /* Webkit animation */
+    -moz-animation: AnimationName 20s ease infinite; /* Mozilla animation */
+    animation: AnimationName 20s ease infinite; /* Standard animation */
+}
 
-/***********************************************************************/
+@-webkit-keyframes AnimationName {
+    0% { background-position: 0% 86%; } /* Keyframe for animation */
+    50% { background-position: 100% 15%; } /* Keyframe for animation */
+    100% { background-position: 0% 86%; } /* Keyframe for animation */
+}
 
-/*EDUCATION*/
+@-moz-keyframes AnimationName {
+    0% { background-position: 0% 86%; } /* Keyframe for animation */
+    50% { background-position: 100% 15%; } /* Keyframe for animation */
+    100% { background-position: 0% 86%; } /* Keyframe for animation */
+}
 
+@keyframes AnimationName {
+    0% { background-position: 0% 86%; } /* Keyframe for animation */
+    50% { background-position: 100% 15%; } /* Keyframe for animation */
+    100% { background-position: 0% 86%; } /* Keyframe for animation */
+}
 
+/* Navbar */
+.navbar {
+    display: flex; /* Display navbar as a flex container */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Align items vertically */
+}
 
+.navbar-brand {
+    padding: 0 2rem; /* Padding around the brand */
+}
 
+.navbar-nav {
+    display: flex; /* Display navbar links as flex container */
+    justify-content: flex-end; /* Align links to the right */
+    width: 100%; /* Full width for the navbar */
+    padding: 1rem 2rem; /* Padding around navbar links */
+}
+
+.logo {
+    height: 3rem; /* Height of the logo */
+    border-radius: 30px; /* Rounded corners for the logo */
+    border: var(--primary-cl) solid 3px; /* Border around the logo */
+}
+
+/* Header Section */
+.header {
+    height: 45rem; /* Height of the header */
+    display: flex; /* Display header as a flex container */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.header p {
+    font-size: 1.2rem; /* Font size for the header paragraph */
+    font-style: italic; /* Italicize the header paragraph */
+}
+
+/* Skills Section */
+.skills {
+    display: flex; /* Display skills as a flex container */
+    justify-content: space-evenly; /* Space skills evenly */
+    text-align: center; /* Center text inside skills container */
+    align-items: center; /* Center items vertically */
+    padding-bottom: 2rem; /* Padding below the skills section */
+}
+
+.skill-container {
+    margin: 2rem 0; /* Margin around the skill container */
+}
+
+/* Education Section */
 .education-container {
-    
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem;
+    display: flex; /* Display education section as a flex container */
+    justify-content: space-between; /* Space items between edges */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text inside the education container */
+    margin-top: 2rem; /* Margin above the education container */
 }
-
-
 
 .paper-container {
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap; /* Allows wrapping of items */
-    gap: 2rem; /* Adds spacing between items */
+    display: flex; /* Display paper items as a flex container */
+    justify-content: space-evenly; /* Space paper items evenly */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    gap: 2rem; /* Space between paper items */
 }
- 
 
 .paper {
-    /* text-align: left; */
-    padding: 0 1rem;
-    height: 14rem;
-    align-content: center;
-    width: 30%;
-    background-color: var(--tertiary-bg);
-    
+    padding: 0 1rem; /* Padding inside paper items */
+    height: 14rem; /* Height of the paper items */
+    align-content: center; /* Align content in the center */
+    width: 30%; /* Width of the paper items */
+    background-color: var(--tertiary-bg); /* Background color of paper items */
 }
 
 .paper:hover, .card-project:hover {
-    background-color: rgba(37, 52, 57, 0.4);
+    background-color: rgba(37, 52, 57, 0.4); /* Background color on hover */
 }
 
-
-
-.paper .c-btn {
-    display: flex;
-}
-
-
-/****************************************************************************************************/
-/*PROJECTS*/
-
-
+/* Projects Section */
 .projects {
-    margin: 5rem 0;
+    margin: 5rem 0; /* Margin around the projects section */
 }
 
-.projects h2{
-    text-align: center;
+.projects h2 {
+    text-align: center; /* Center text for project section heading */
 }
 
 .img-container {
-    padding: 1rem;
-    border-radius: 30px;
+    padding: 1rem; /* Padding around image containers */
+    border-radius: 30px; /* Rounded corners for image containers */
 }
 
-
-
-
 .project-container {
-    text-align: left;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1rem;
+    text-align: left; /* Align text to the left */
+    padding: 2rem; /* Padding inside the project container */
+    display: flex; /* Display projects as a flex container */
+    justify-content: space-evenly; /* Space projects evenly */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    gap: 1rem; /* Space between project items */
 }
 
 .card-title {
-    text-align: center;
-    color: var(--tertiary-cl);
-    padding-bottom: 1.5rem;
+    text-align: center; /* Center text inside card titles */
+    color: var(--tertiary-cl); /* Font color for card titles */
+    padding-bottom: 1.5rem; /* Padding below card titles */
 }
 
-.project-tech p, .project-description p, .project-achivments li  {
-    padding: 1rem;
+.project-tech p, .project-description p, .project-achivments li {
+    padding: 1rem; /* Padding inside project tech, description, and achievements */
 }
 
 .project-achivments {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Display achievements as a flex container */
+    flex-direction: column; /* Stack achievements vertically */
 }
 
-
 .project-achivments ul {
-    padding: 0;
-    margin: 0;
-    column-count: 1;
-    
+    padding: 0; /* Remove padding from achievements list */
+    margin: 0; /* Remove margin from achievements list */
+    column-count: 1; /* Display achievements list as a single column */
 }
 
 .project-achivments li {
-    margin: 0; 
+    margin: 0; /* Remove margin from achievements list items */
 }
 
 .card-project {
-    width: 30rem;
-    margin: 0.5rem 0;
+    width: 30rem; /* Width of project cards */
+    margin: 0.5rem 0; /* Margin around project cards */
 }
-
 
 .card-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
+    display: flex; /* Display buttons as a flex container */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    margin: 0.5rem; /* Margin around buttons */
 }
 
-
-
-
-/***********************************************************************/
-/*EXPERIENCE*/
-
+/* Experience Section */
 .experience {
-    margin: 5rem 0;
+    margin: 5rem 0; /* Margin around the experience section */
 }
 
-.experience h2{
-    text-align: center;
+.experience h2 {
+    text-align: center; /* Center text for experience section heading */
 }
-
 
 .experience-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 0 1rem;
+    display: flex; /* Display experience items as a flex container */
+    justify-content: space-between; /* Space experience items between edges */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    padding: 0 1rem; /* Padding inside the experience container */
 }
 
 .exp-container {
-    padding: 1rem;
-    margin: 0 2rem;    
+    padding: 1rem; /* Padding inside experience containers */
+    margin: 0 2rem; /* Margin around experience containers */
 }
 
 .exp-container h4 {
-    padding-left: 1rem;
+    padding-left: 1rem; /* Padding on the left of experience container headings */
 }
 
 .exp-container ul {
-    column-count: 1;
+    column-count: 1; /* Display experience list as a single column */
 }
 
 .exp-container li {
-    padding-left: 1rem;
+    padding-left: 1rem; /* Padding on the left of experience list items */
 }
 
-/****************************************************************************************************/
-
-/*FOOTER*/
-
-
+/* Footer */
 footer {
-    padding: 0 3rem;
-
+    padding: 0 3rem; /* Padding inside the footer */
 }
 
 .footer-container {
-    border-top: 1px dashed rgba(178, 158, 132, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    padding: 2rem 1rem;
+    border-top: 1px dashed rgba(178, 158, 132, 0.5); /* Border on top of footer */
+    display: flex; /* Display footer as a flex container */
+    justify-content: space-between; /* Space items between edges */
+    align-items: center; /* Align items vertically */
+    align-content: center; /* Align content in the center */
+    padding: 2rem 1rem; /* Padding inside the footer container */
 }
+
 .footer-container p {
-    padding: 0 1rem;
-    text-align: center;
+    padding: 0 1rem; /* Padding inside footer text */
+    text-align: center; /* Center text inside the footer container */
 }
 
-.socials  {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
+.socials {
+    display: flex; /* Display social icons as a flex container */
+    justify-content: center; /* Center social icons horizontally */
+    align-items: center; /* Center social icons vertically */
+    gap: 1rem; /* Space between social icons */
 }
 
+/* Media Queries for Responsive Design */
 
-
-
-/****************************************************************************************************/
-
+/* Tablet and Small Desktop Adjustments */
 @media (max-width: 1024px) {
     .paper {
         width: 30%; /* Each paper will take 30% of the container's width */
-        height: 14rem;
+        height: 14rem; /* Height of the paper items */
     }
 
     .paper-container {
-        padding: 0 1rem;
+        padding: 0 1rem; /* Padding inside the paper container */
     }
+
     .skills {
-    flex-direction: column;
+        flex-direction: column; /* Stack skills vertically */
     }
 
     .skill-container {
-       margin: 2rem 0;
+        margin: 2rem 0; /* Margin around skill containers */
     }
-
 }
 
-/* Responsive layout for mobile devices */
+/* Mobile Devices Adjustments */
 @media (max-width: 768px) {
     .paper {
         width: 45%; /* Two papers per row on smaller screens */
-        height: 20rem;
+        height: 20rem; /* Height of the paper items */
     }
 
     .paper-container {
-        padding: 0 1rem;
+        padding: 0 1rem; /* Padding inside the paper container */
     }
 
     ul {
-        column-count: 1; /* Muestra solo una columna en pantallas pequeñas */
+        column-count: 1; /* Display list items in a single column */
     }
+
     .card-project {
-        width: 300;
+        width: 300px; /* Width of project cards on small screens */
     }
 }
 
-
-/* Additional Small Screen Adjustments */
+/* Extra Small Screens Adjustments */
 @media (max-width: 480px) {
     .skills {
-        flex-direction: column; /* Stack vertically on cellphones */
+        flex-direction: column; /* Stack skills vertically on cellphones */
     }
+
     li {
         flex-direction: column; /* Stack skill title and slider vertically */
-        align-items: center;
+        align-items: center; /* Center align items vertically */
     }
+
     li p {
-        padding: 0;
-        margin-bottom: 0.5rem;
+        padding: 0; /* Remove padding from list item paragraphs */
+        margin-bottom: 0.5rem; /* Add bottom margin to list item paragraphs */
     }
 
     .card-project {
-        width: 300;
+        width: 300px; /* Width of project cards on extra small screens */
     }
 }
 
-
+/* Ensure no horizontal overflow */
 .projects, .experience {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-
-
-
-  
-  
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100%; /* Limit maximum width */
+}

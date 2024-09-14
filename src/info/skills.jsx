@@ -31,7 +31,7 @@ const softSkills= [
     },
     {
         id: 7,
-        skill:"Management 3.0",
+        skill:"Time Management",
         level: "5"
     },
     {
@@ -41,8 +41,13 @@ const softSkills= [
     },
     {
         id: 9,
-        skill:"Clickup",
-        level: "4"
+        skill:"Adaptability",
+        level: "5"
+    },
+    {
+        id: 10,
+        skill:"Problem solving",
+        level: "5"
     },
 ]
 
