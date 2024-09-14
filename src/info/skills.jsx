@@ -56,12 +56,12 @@ const techSkills = [
     {
         id: 1,
         skill:"HTML 5",
-        level: "2"
+        level: "3"
     },
     {
         id: 2,
         skill:"JavaScript",
-        level: "2"
+        level: "3"
     },
     {
         id: 3,
@@ -71,7 +71,7 @@ const techSkills = [
     {
         id: 4,
         skill:"CSS",
-        level: "2"
+        level: "3"
     },
     {
         id: 5,
@@ -98,11 +98,7 @@ const techSkills = [
         skill:"React.js",
         level: "2"
     },
-    {
-        id: 10,
-        skill:"Bootstrap",
-        level: "2"
-    },
+    
 ]
 
 export default softSkills;

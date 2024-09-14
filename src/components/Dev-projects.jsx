@@ -15,7 +15,10 @@ function Devprojects() {
  function createProject(project) {  
 
   return (
-      <Grid xs={12} sm={3} md={3} key={project.id}> {/* Define the grid layout for each project card */}
+      <Grid
+        className="card-container" 
+        xs={12} sm={3} md={3} 
+        key={project.id}> {/* Define the grid layout for each project card */}
         <Card
           data-aos={project.aos} // Set AOS animation attribute for the card
           className="card-project" // Apply custom CSS class to the card

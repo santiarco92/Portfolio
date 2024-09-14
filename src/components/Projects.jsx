@@ -25,7 +25,9 @@ function Projects() {
     const isExpanded = expandedCard === project.id;  // Determine if the current card is expanded
 
 
-    return ( <Grid xs={12} sm={3} md={3}> {/* Grid item with responsive widths */}
+    return ( <Grid 
+              className="card-container"
+              xs={12} sm={3} md={3}> {/* Grid item with responsive widths */}
                 <Card
                   className="card-project" // CSS class for styling the card
                   key={project.id} // Unique key for the card

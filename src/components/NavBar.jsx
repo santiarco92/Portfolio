@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../img/SA-White-bg.jpg";
+import MenuIcon from '@mui/icons-material/Menu';
 
 function NavBar() {
   return (
@@ -7,7 +8,9 @@ function NavBar() {
       <div className="container-fluid"> {/* Container div for proper alignment and spacing */}
         <img className="logo" src={Logo} alt="Logo" loading="lazy"/> {/* Logo image with lazy loading for performance */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> {/* Button to toggle the navbar on small screens */}
-          <span className="navbar-toggler-icon"></span> {/* Icon for the toggler button */}
+          <MenuIcon 
+            className="navbar-toggler-icon"
+            sx={{ color: '#b29e84' }} />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup"> {/* Container for collapsible navbar items */}
           <div className="navbar-nav"> {/* Container for navbar links */}

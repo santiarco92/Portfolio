@@ -166,6 +166,17 @@ li p {
     border: var(--primary-cl) solid 3px; /* Border around the logo */
 }
 
+.navbar-toggler {
+    border: 2px solid var(--primary-cl);
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Elimina el borde negro predeterminado */
+    box-shadow: 0 0 0 2px rgba(178, 158, 132, 0.3); /* Borde personalizado cuando el botón esté enfocado */
+  }
+  
+   
+
 /* Header Section */
 .header {
     height: 45rem; /* Height of the header */
@@ -269,9 +280,13 @@ li p {
     margin: 0; /* Remove margin from achievements list items */
 }
 
+.card-container {
+    margin: 1rem 0;
+}
+
 .card-project {
     width: 30rem; /* Width of project cards */
-    margin: 0.5rem 0; /* Margin around project cards */
+    
 }
 
 .card-btn {
@@ -385,8 +400,16 @@ footer {
 
 /* Extra Small Screens Adjustments */
 @media (max-width: 480px) {
+
+
     .skills {
         flex-direction: column; /* Stack skills vertically on cellphones */
+    }
+
+    .paper {
+        column-count: 1; 
+        width: 70%; /* Two papers per row on smaller screens */
+        height: 15rem
     }
 
     li {
@@ -402,10 +425,52 @@ footer {
     .card-project {
         width: 300px; /* Width of project cards on extra small screens */
     }
+    body {
+        font-family: var(--primaryFont); /* Set the font family for the body */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
 }
 
 /* Ensure no horizontal overflow */
-.projects, .experience {
+.projects, .experience .education, .header {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     max-width: 100%; /* Limit maximum width */
 }
+
+
+
+/* Asegura que no haya desbordamiento en ningún caso */
+body, html {
+    overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+    max-width: 100%;    /* Limita el ancho al viewport */
+  }
+  
+  /* Imágenes */
+  img {
+    max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de las imágenes */
+  }
+  
+  /* Ajustes específicos para contenedores en móviles */
+  @media (max-width: 768px) {
+    .container-fluid, .projects, .experience, .skills {
+      padding: 0 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+  
+    .card-project, .exp-container, .project-container {
+      width: 100%;        /* Asegura que los elementos ocupen el 100% del ancho */
+      max-width: 100%;    /* Limita el ancho al 100% */
+      margin: 0;          /* Evita márgenes que puedan causar desbordamiento */
+      padding: 0;         /* Elimina padding excesivo */
+    }
+  }
+  
+  /* Corrige posibles problemas de uso de vw */
+  body {
+    width: 100%; /* Asegura que no se use vw que puede causar desbordamiento */
+  }
+
+
+
+
+  
